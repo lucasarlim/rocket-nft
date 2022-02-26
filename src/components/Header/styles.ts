@@ -39,6 +39,8 @@ export const ButtonMetamask = styled.div`
         font-size: 1rem;
         font-weight: bold;
 
+        margin-left: 16px;
+
         color: var(--black-text);
     }
 `

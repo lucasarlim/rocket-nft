@@ -80,8 +80,6 @@ export const ArtistName = styled.p`
 `
 
 export const Divider = styled.div`
-    width: 2px;
-    height: 100%;
-
-    background-color: var(--subtitle-color);
+    border: 1px solid var(--color-logo);
+    border-radius: 100%;
 `
