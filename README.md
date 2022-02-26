@@ -1,6 +1,6 @@
 ![Rocketseat NFTs](https://i.imgur.com/ZBwgSUP.png)
 
- Deployed <a href="https://discord-clone-template.netlify.app/">here</a>.
+ Deployed <a href="https://rocket-nft-no7flkz5n-lucasarlim.vercel.app/">here</a>.
 
  <a href="https://github.com/Rocketseat/youtube-clone-discord/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/lucasarlim/rocket-nft?color=ff5b50&logoColor=%237159c1&style=flat" alt="Contributors">
