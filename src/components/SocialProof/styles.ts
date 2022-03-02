@@ -55,14 +55,16 @@ export const NumbersSection = styled.div`
 
     > div {
         display: flex;
+        align-items: center;
         flex-direction: column;
+
 
         > strong {
             width: 100%;
 
             font-size: 3.125rem;
             font-weight: bold;
-            text-aling: center;
+            text-align: center;
 
             color: var(--text-color);
         }
@@ -72,7 +74,7 @@ export const NumbersSection = styled.div`
 
             font-size: 1.25rem;
             font-weight: 500;
-            text-aling: center;
+            text-align: center;
 
             color: var(--subtitle-color);
         }
