@@ -7,7 +7,14 @@ export const Container = styled.div`
     width: 100%;
 
     grid-gap: 40px;
-    margin: 83px 0 100px 0;
+    margin: 5rem 0 100px 0;
+
+    @media (max-width: 767px) {
+        > img {
+            display:none;
+        }
+    }
+   
 `
 
 export const Title = styled.h1`
@@ -44,7 +51,7 @@ export const ArtistsContent = styled.div`
     flex-direction: row;
     align-items: flex-end;
 
-    grid-gap: 4px;
+    grid-gap: 24px;
 
     > img {
         width: 169px;

@@ -73,6 +73,7 @@ export const Artist = styled.div`
         display: flex;
         justify-content: center;
         flex-direction: column;
+        grid-gap: 8px;
 
         margin-left: 2.5rem;
         
