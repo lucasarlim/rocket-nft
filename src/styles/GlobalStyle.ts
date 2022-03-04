@@ -6,6 +6,10 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-size: 16px;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
     }
     
     html, body, .App {
