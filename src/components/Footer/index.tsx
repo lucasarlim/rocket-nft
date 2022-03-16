@@ -1,6 +1,18 @@
 import React from "react";
 
-import { Container, MiddleInfo, SocialMidias, InputWrapper, Input, SubmitButton,NavSection, NavLinks, TopInfo, BottomInfo, NewsletterSection } from "./styles";
+import {
+  Container,
+  MiddleInfo,
+  SocialMidias,
+  InputWrapper,
+  Input,
+  SubmitButton,
+  NavSection,
+  NavLinks,
+  TopInfo,
+  BottomInfo,
+  NewsletterSection,
+} from "./styles";
 import Logo from "./../../assets/svg/logo.svg";
 import Arrow from "./../../assets/svg/arrow-black.svg";
 import Instagram from "./../../assets/svg/instagram.svg";
@@ -14,9 +26,9 @@ const Footer: React.FC = () => {
       <TopInfo>
         <img src={Logo} alt="Rocket NFTs Logo" />
 
-        <button>
+        <a>
           <img src={Arrow} alt="" />
-        </button>
+        </a>
       </TopInfo>
 
       <MiddleInfo>
@@ -59,7 +71,6 @@ const Footer: React.FC = () => {
               <a href="">Ajuda</a>
             </NavLinks>
           </div>
-
         </NavSection>
       </MiddleInfo>
 
