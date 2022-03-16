@@ -19,19 +19,19 @@ const Header: React.FC = () => {
           to="/"
           className={({ isActive }) => (isActive ? "active" : "inactive")}
         >
-          Home{" "}
+          Inicio{" "}
         </NavLink>
         <NavLink
           to="/marketplace"
           className={({ isActive }) => (isActive ? "active" : "inactive")}
         >
-          Buy NFT
+          Comprar NFT
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? "active" : "inactive")}
         >
-          About
+          Sobre
         </NavLink>
         <NavLink
           to="/help"

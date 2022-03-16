@@ -83,7 +83,6 @@ export const NavLink = styled(Link)`
 
     &.active {
       color: var(--color-logo);
-      font-weight: bold;
 
       &::before {
         width: 100%;
