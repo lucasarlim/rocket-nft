@@ -18,7 +18,7 @@ export default createGlobalStyle`
     }
     
     html, body, .App {
-        height: 100vh;
+        height: 100%;
         overflow-y: scroll;
         background-color: var(--body-background);
     }
