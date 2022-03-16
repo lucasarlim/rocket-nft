@@ -1,28 +1,50 @@
-import React from 'react';
+import React, { useContext } from "react";
 
-import { Container, Pages, ButtonMetamask } from './styles';
-import Logo from './../../assets/svg/logo.svg'
-import Metamask from './../../assets/svg/logo_MetaMask.svg'
+import { Container, Pages, NavLink } from "./styles";
+import Logo from "./../../assets/svg/logo.svg";
+import menu from "./../../assets/svg/menu-buguer-open.svg";
+
+import ButtonMetamask from "../ButtonMetamask";
+import { SidebarContext } from "../../App";
 
 const Header: React.FC = () => {
-  return(
-    <Container>
+  const { sidebar, setSidebar } = useContext(SidebarContext);
 
-      <img src={Logo} alt="Rocket NFTs Logo"/>
-      
+  return (
+    <Container id="#">
+      <img src={Logo} className='logo' alt="Rocket NFTs Logo" />
+
       <Pages>
-        <a href="">Comprar NFT</a>
-        <a href="">Sobre</a>
-        <a href="">FAQ</a>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          Home{" "}
+        </NavLink>
+        <NavLink
+          to="/marketplace"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          Buy NFT
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/help"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          FAQ
+        </NavLink>
       </Pages>
 
-      <ButtonMetamask>
-        <img src={Metamask} alt="Metamask Logo" />
-        <span>Conectar carteira</span>
-      </ButtonMetamask>
-
+      <img src={menu} className="sidebarIcon" alt="" onClick={() => setSidebar(!sidebar)}/>
+      <ButtonMetamask />
     </Container>
   );
-}
+};
 
 export default Header;

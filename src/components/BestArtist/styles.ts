@@ -7,14 +7,14 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 148px;
+    margin-bottom: 8rem;
 `
 
 export const Title = styled.h1`
     font-size: 3.125rem;
     font-weight: bold;
 
-    margin-bottom: 120px;
+    margin-bottom: 3rem;
     color: var(--text-color);
 
     > strong {
@@ -35,6 +35,10 @@ export const CardsArtists = styled.div`
 
     flex-wrap: wrap;
     grid-gap: 115px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 56px;
+    }
     
 `
 

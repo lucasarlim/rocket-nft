@@ -5,19 +5,23 @@ export const Container = styled.div`
     align-items: center;
 
     width: 100%;
+    height: auto;
 
     grid-gap: 40px;
-    margin: 5rem 0 100px 0;
+    margin: 2rem 0 3rem 0;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
         > img {
             display:none;
         }
     }
+
+   
    
 `
 
 export const Title = styled.h1`
+    width: 100%;
     font-size: 3.125rem;
     font-weight: bold;
 
@@ -44,6 +48,10 @@ export const DescriptionContent = styled.div`
 
         line-height: 150%;
         color: var(--text-color);
+    }
+
+    @media (max-width: 768px) {
+        display:none;
     }
 `
 export const ArtistsContent = styled.div`

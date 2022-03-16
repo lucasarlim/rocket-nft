@@ -4,15 +4,22 @@ export const Container = styled.div`
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, 296px);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 296px);
 
-    margin: 0 auto;
     grid-gap: 60px 32px;
 
     > img {
-        width: 296px;
-        height: 198px;
+        width: 100%;
+        height: auto;
 
         border: 1px solid var(--text-color);
+    }
+
+    @media (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 `

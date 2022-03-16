@@ -12,7 +12,7 @@ import Astronauta8 from './../../assets/images/galeria-8.png'
 
 const Gallery: React.FC = () => {
   return(
-    <Container>
+    <Container >
       <img src={Astronauta1} alt="" />
       <img src={Astronauta2} alt="" />
       <img src={Astronauta3} alt="" />
