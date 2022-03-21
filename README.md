@@ -20,7 +20,7 @@
 
 Welcome to the project. <br>
 I come through this project to put into **practice** methods **learned** on the Front-End, <br>
-created with **React and Typescript** it is a presentation page. **(non-dynamic)**. <br>
+created with **React and Typescript** it is a presentation page. <br>
 
 **@Rocketseat Challenge**
 
